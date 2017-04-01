@@ -1,0 +1,39 @@
+
+<div>
+<span ng-show="! validateEmpty(trip)">
+  
+  <table class="mdl-data-table mdl-js-data-table">
+    <thead>
+      <tr>
+        <th class="mdl-data-table__cell--non-numeric">Date</th>
+        <th class="mdl-data-table__cell--non-numeric">Duration (min)</th>
+        <th>Distance (KM)</th>
+        <th class="mdl-data-table__cell--non-numeric">Value (USD)</th>
+        <th>Cash Trip</th>
+      </tr>
+    </thead>
+    <tbody>    
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">{{trip.tripDate}}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{trip.duration}}</td>
+        <td>{{trip.distance}}</td>
+        <td class="mdl-data-table__cell--non-numeric">$ {{trip.value}}</td>
+        <td><!-- Accent-colored flat button -->
+          <button class="mdl-button mdl-js-button mdl-button--accent" ng-click="cashTrip(trip)">
+            Cash it!!
+          </button>
+        </td>
+      </tr>    
+    </tbody>
+  </table>
+</span>
+</div>
+
+<div>
+<span ng-show="validateEmpty(trip)">
+  <h5>You don´t have any pending trip by cash. </h5>
+</span >
+</div>
+
+
+

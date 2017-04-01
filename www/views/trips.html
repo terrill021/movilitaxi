@@ -1,0 +1,26 @@
+<div>
+  <h6>Trips</h6>
+</div>
+
+<div>
+<table class="mdl-data-table mdl-js-data-table">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Date</th>
+      <th class="mdl-data-table__cell--non-numeric">Duration (min)</th>
+      <th>Distance (KM)</th>
+      <th class="mdl-data-table__cell--non-numeric">Value (USD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr ng-repeat="trip in myTrips">
+      <td class="mdl-data-table__cell--non-numeric">{{trip.tripDate | date:'medium'}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{trip.duration}}</td>
+      <td>{{trip.distance}}</td>
+      <td class="mdl-data-table__cell--non-numeric">$ {{trip.value}}</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>

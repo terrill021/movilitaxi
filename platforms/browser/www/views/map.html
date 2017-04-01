@@ -1,0 +1,30 @@
+<!--css-->
+    <style type="text/css">
+        
+        .angular-google-map-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+
+<div>
+    <div class="container">
+    <div class="col s12">
+        <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options" control="map.control">
+            
+            <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+            
+            </ui-gmap-marker>
+
+        </ui-gmap-google-map>
+    </div>
+ 
+    <div class="col s12">
+     <a href="" ng-click="goBack('newTrip', buttonValue)" target="_blank" id="view-source" 
+     class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">{{buttonValue}}</a>
+    </div>
+
+</div>
