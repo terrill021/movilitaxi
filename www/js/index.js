@@ -37,6 +37,8 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+                angular.bootstrap(document, ['appAngular']);
+
         //var parentElement = document.getElementById(id);
        // var listeningElement = parentElement.querySelector('.listening');
         //var receivedElement = parentElement.querySelector('.received');

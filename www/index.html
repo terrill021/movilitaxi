@@ -95,7 +95,7 @@
     <title>Itaxi</title>
 </head>
 
-<body>
+<body >
     
 
     <!--Cuerpo principal de la aplicacion -->  
@@ -224,7 +224,8 @@
                    
                 </div>
             </div>
-        </footer>             
+        </footer>
+             
         </section>
         
 
@@ -237,20 +238,18 @@
            </div>
          </div>
         <!-- Your code here -->
-    </section>
+        
+       
+        
+        
 
-<script>
- 
-    document.addEventListener("deviceready", onDeviceReady, false);
-    function onDeviceReady() 
-    {       
-        angular.bootstrap(document, ['app']);
-    }
-  </script>
+    </section>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    
+    <script type="text/javascript">
+        app.initialize();        
+    </script>
 </body>
 
 </html>
