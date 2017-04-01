@@ -1,26 +1,27 @@
-<div>
-  <h6>Trips</h6>
-</div>
+<!--ResponsiveTable-->
+        <div style="margin-bottom: 128px;">
+            <div class="row">
+                <h2 class="center-align">My Trips</h2>
+                <div class="col s12">
+                    <table class="responsive-table">
+                        <thead>
+                            <tr>
+                                <th data-field="id">Date</th>
+                                <th data-field="name">Duration (min)</th>
+                                <th data-field="price">Distance (KM)</th>
+                                <th data-field="price">Value (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="trip in myTrips">
+                              <td>{{trip.tripDate | date:'medium'}}</td>
+                              <td>{{trip.duration}}</td>
+                              <td>{{trip.distance}}</td>
+                              <td>$ {{trip.value}}</td>
+                            </tr>                         
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-<div>
-<table class="mdl-data-table mdl-js-data-table">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric">Date</th>
-      <th class="mdl-data-table__cell--non-numeric">Duration (min)</th>
-      <th>Distance (KM)</th>
-      <th class="mdl-data-table__cell--non-numeric">Value (USD)</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr ng-repeat="trip in myTrips">
-      <td class="mdl-data-table__cell--non-numeric">{{trip.tripDate | date:'medium'}}</td>
-      <td class="mdl-data-table__cell--non-numeric">{{trip.duration}}</td>
-      <td>{{trip.distance}}</td>
-      <td class="mdl-data-table__cell--non-numeric">$ {{trip.value}}</td>
-    </tr>
-    
-  </tbody>
-</table>
-</div>

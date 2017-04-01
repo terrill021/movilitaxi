@@ -39,27 +39,8 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <!--estilos plantilla -->
-     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- js de la platilla -->
     
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    
-     <!-- Material Design Iconic Font CSS -->
-    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
-    
-    <!-- Malihu jQuery custom content scroller CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-    
-    <!-- Sweet Alert CSS -->
-    <link rel="stylesheet" href="css/sweetalert.css">
-    
-    <!-- MaterialDark CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Sweet Alert JS --> 
-    <script src="js/sweetalert.min.js"></script>
-    <!-- -->
 
     <!-- js de la app-->
     <script src="js/jquery-3.2.0.min.js"></script>
@@ -80,9 +61,38 @@
     <!-- and css -->
     <link rel="stylesheet" type="text/css" href="css/jquery.toast.min.css">   
     <!-- -->
+    <!-- Materialize JS -->
+    <script src="js/materialize.min.js"></script>
+    
+    <!-- Malihu jQuery custom content scroller JS -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <!-- MaterialDark JS -->
+    <script src="js/main.js"></script>
+    <!-- -->
+         <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    
+     <!-- Material Design Iconic Font CSS -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    
+    <!-- Malihu jQuery custom content scroller CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    
+    <!-- Sweet Alert CSS -->
+    <link rel="stylesheet" href="css/sweetalert.css">
+    
+    <!-- MaterialDark CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
+    <!-- Sweet Alert JS --> 
+    <script src="js/sweetalert.min.js"></script>
+    <!-- -->
    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
-    <title>Hello World</title>
+    <title>Itaxi</title>
 </head>
 
 <body ng-app="app">
@@ -95,42 +105,32 @@
         <div class="NavLateral-FontMenu full-width ShowHideMenu"></div>
         <div class="NavLateral-content full-width">
             <header class="NavLateral-title full-width center-align">
-                Material Dark <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+                Itaxi <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
             </header>
             <figure class="full-width NavLateral-logo">
                 <img src="assets/img/logo.png" alt="material-logo" class="responsive-img center-box">
-                <figcaption class="center-align">Material Dark Admin Template</figcaption>
+                <figcaption class="center-align">Open</figcaption>
             </figure> 
             <div class="NavLateral-Nav">
                 <ul class="full-width">
+                     <li>
+                        <a href="" ng-click="goto('newTrip')" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> New Trip</a>
+                    </li>    
+                    
+                    <li class="NavLateralDivider"></li>
                     <li>
-                        <a href="home.html" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> Dashboard</a>
+                        <a href="" ng-click="goto('trips')" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> My Trips</a>
                     </li>    
                     <li class="NavLateralDivider"></li>
                     <li>
-                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-language-css3 zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> CSS</a>
-                        <ul class="full-width">
-                            <li><a href="typography-shadow.html" class="waves-effect waves-light">Typography & Shadow</a></li>
-                            <li class="NavLateralDivider"></li>
-                            <li><a href="table.html" class="waves-effect waves-light">Table</a></li>
-                        </ul>
-                    </li>
+                        <a href="" ng-click="goto('cashTrip')" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> Cash Trip</a>
+                    </li>    
                     <li class="NavLateralDivider"></li>
                     <li>
-                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-widgets zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Components</a>
-                        <ul class="full-width">
-                            <li><a href="button.html" class="waves-effect waves-light">Button</a></li>
-                            <li class="NavLateralDivider"></li>
-                            <li><a href="form.html" class="waves-effect waves-light">Forms</a></li>
-                        </ul>
-                    </li>
-                    <li class="NavLateralDivider"></li>
-                    <li>
-                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-view-web zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Sample Pages</a>
-                        <ul class="full-width">
-                            <li><a href="template.html" class="waves-effect waves-light">Blank Page</a></li>
-                        </ul>
-                    </li>   
+                        <a href="home.html" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> Log Out</a>
+                    </li>    
+        
+                                
                 </ul>
             </div>  
         </div>  
@@ -157,7 +157,7 @@
         </div>
 
         <!-- Notifications area -->
-        <section class="z-depth-3 NotificationArea">
+        <section class="z-depth-3 NotificationArea" >
             <div class="full-width center-align NotificationArea-title">Notifications <i class="zmdi zmdi-close btn-Notification"></i></div>
             <a href="#" class="waves-effect Notification">
                 <div class="Notification-icon"><i class="zmdi zmdi-accounts-alt bg-info"></i></div>
@@ -213,49 +213,38 @@
                         <small>1 hours Ago</small>
                     </p>
                 </div>
-            </a>  
+            </a> 
+
+            <!-- Footer -->
+        <footer class="footer-MaterialDark">
+            
+            <div class="NavLateralDivider"></div>
+            <div class="footer-copyright">
+                <div class="container center-align">
+                   
+                </div>
+            </div>
+        </footer>
+             
         </section>
         
 
         <!-- Your code here -->
-        <div class="container" >
-            <div class="row">
-                <div class="col s12">
+        <div class="container" style="margin-bottom: 128px;">
+                <div class="row">
+               
                     <ui-view ></ui-view>
-                </div>
-            </div>  
+                  
+           </div>
          </div>
         <!-- Your code here -->
         
-        <!-- Footer -->
-        <footer class="footer-MaterialDark">
-            <div class="container">
-                <div class="row">
-                    
-                </div>
-            </div>
-            <div class="NavLateralDivider"></div>
-            <div class="footer-copyright">
-                <div class="container center-align">
-                    © 2016 Carlos Eduardo Alfaro Orellana
-                </div>
-            </div>
-        </footer>
+       
         
         
+
     </section>
 
-
-    <!-- js de la platilla -->
-    <!-- Materialize JS -->
-    <script src="js/materialize.min.js"></script>
-    
-    <!-- Malihu jQuery custom content scroller JS -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-    <!-- MaterialDark JS -->
-    <script src="js/main.js"></script>
-    <!-- -->
 
 
     <script type="text/javascript" src="cordova.js"></script>
